@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "lib": [
+            "es5",
+            "DOM",
+            "ES2015"
+        ],
+        "module": "none",
+        "jsx": "preserve",
+        "target": "es3",
+        "removeComments": true,
+        "skipLibCheck": true,
+        "noImplicitUseStrict": true,
+        "types": [
+            "types-for-adobe/AfterEffects/2018"
+        ]
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+        "./**/*"
+    ],
+}
