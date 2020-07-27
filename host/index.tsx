@@ -12,13 +12,17 @@ function test(val) {
       end: [00, 00, 10],
       text: "I am Mohsin",
     },
+    {
+      start: [00, 00, 10],
+      end: [00, 00, 14],
+      text: "Living in Qatar",
+    },
   ];
 
   var comp = app.project.activeItem;
   var subtitles = comp.layers.addText("Subtitles");
 
   for (var i = 0; i < data.length; i++) {
-    alert(data[i].text);
     var markerProperty = subtitles.property("ADBE Marker");
     var marker = new MarkerValue(data[i].text);
     marker.duration = data[i].end[2] - data[i].start[2];
